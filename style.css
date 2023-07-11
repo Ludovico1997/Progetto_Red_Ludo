@@ -1,0 +1,285 @@
+/* Color: darkred, #C67F7F, #ececec;
+Font:  Nova Square, Rajdhani; */
+/* navbar */
+:root{
+    --colorbackground:rgb(240, 240, 240);
+   --colormain:darkred;
+}
+:root{
+    --font1: 'Grenze Gotisch', cursive;
+    --font2 : 'Nova Square', cursive;
+}
+body{
+    max-height: 200vh;
+}
+.navbarrow{
+    width: 50vw;
+    margin-right: 0;
+    position: relative;
+    left: 20% ;
+}
+.navbarlogo{
+    width: 150px;
+    height: 100px;
+    margin: auto;
+}
+.navbarcol{
+    text-decoration: none;
+    color: black;
+}
+/* titolo */
+.titolone{
+    color: var(--colormain);
+    font-family: 'Grenze Gotisch', cursive;
+    font-family: 'Nova Square', cursive;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 400px;
+    padding-bottom: 400px;
+}
+/* background header */
+.sezione1{
+    background:linear-gradient(rgba(245, 240, 240, 0.99), rgba(255, 255, 255, 0.015)), url(./media/switzerland-862870_1920.jpg);
+    background-size: cover;
+    background-position: center; 
+    z-index: 2;
+}
+/* paragrafo lorem */
+.plorem{
+    position: relative;
+    bottom: 60vh;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 100px;
+    font-size: 11px;
+    text-align: center;
+    font-style: oblique;
+    z-index: 1;
+}
+.plorem::after{
+    content: '"';
+     font-size: 30px;
+     color: var(--colormain);
+}
+.plorem::before{
+    content: '"';
+     font-size: 30px;
+     color:var(--colormain);
+}
+.sezione2{
+    position: relative;
+    bottom: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(./media/mountains2.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.backgrigio{
+    height: 160vh;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    top: 100vh;
+    
+} 
+/* inizio scacchi */
+.scacchi{
+    justify-content:space-evenly;
+}
+.card{
+    position: relative;
+    bottom: 50vh;
+    height: 100px;
+    width: 100px;
+    background-color: var(--colorbackground);
+    border: none;
+}
+.card>span{
+    text-align: center;
+    color: var(--colormain);
+    font-size: 50px;
+}
+.card>div{
+    font-size: 9px;
+}
+.card>hr{
+    position: relative;
+    left: -25px;
+    border: 2px solid var(--colormain);
+    width: 120px;
+}
+/* inizio 2 paragrafi lorem */
+.plorem2{
+    position: relative;
+    bottom: 50vh;
+   
+    z-index: 1;
+}
+.titololorem{
+    color: var(--colormain);
+}
+.loremcard1{
+    padding: 100px;
+    padding-right: 15%;
+    font-size: 15px;
+}
+.loremcard2{
+    padding: 100px;
+    text-align: right;
+    padding-left: 15%;
+    font-size: 15px;
+}
+.contenitorebottonesezione2{
+    display: flex;
+    justify-content: center;
+}
+.bottonesezione2{
+    background-color: var(--colormain);
+    padding-left: 4px;
+    padding-right: 4px;
+    position: relative;
+    bottom: 50vh;
+    z-index: 1;
+    font-family: var(--font1);
+}
+.sezione3{
+    position: relative;
+    bottom: 40vh;
+    background-repeat: no-repeat;
+    background-image: url(./media/trees2.png);
+    background-size: cover;
+    height: 100vh;
+}
+.contenitores3{
+    margin-left: 50px;
+    margin-right: 50%;
+    position: relative;
+    bottom: 50vh;
+}
+.contenitores3>div>h2{
+    color: var(--colormain);
+    margin-bottom: 30px;
+}
+.contenitores3>div>ul>li>h4{
+    color: var(--colormain);
+
+}
+.contenitores3>div>ul{
+    list-style: none;
+}
+.contenitores3>div>ul::before{
+        content:'';
+        display:inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border: 2px solid var(--colormain);
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+
+}
+/* sfondo alberigrigi */
+.AlberiGrigi{
+    height: 100vh;
+    background:url(/media/single.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    bottom: 120vh;
+}
+/* section team */
+.conteinerultimasection{
+    height: 200vh;
+    background-color: var(--colorbackground);
+    position: relative;
+    bottom: 140vh;
+}
+.titoloteam{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.conteinerultimasection>row>col>h2{
+    color: var(--colormain);
+}
+.colormain{
+    color: var(--colormain);
+}
+.contenitoreteam{
+    margin-left: 50px;
+}
+.corsivo{
+    font-style: oblique;
+    font-size: 10px;
+    text-align: center;
+}
+.colonneteam{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+    justify-content:center;
+}
+.imagineteam{
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid;
+    outline: 5px solid var(--colormain);
+    outline-offset: 5px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+/* benefit */
+.contenitorebenefit{
+    margin-top: 10vh;
+    margin-left: 10vh;
+}
+.immaginebenefit{
+    width: 50%;
+    border-radius: 80%;
+    border: 2px solid;
+    outline: 5px solid var(--colormain);
+    outline-offset: 5px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.rigabenefit{
+
+    display: flex;
+    justify-content: space-between;
+}
+.colonnabenefit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colonnabenefit2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+/* footer */
+.alberirossi{
+    background-image: url(/media/other.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: contain;
+    height: 100vh;
+    position: relative;
+    bottom: 200vh;
+    left: 15px;
+    z-index: 5;
+}
+.backgroundfooter{
+    background-color: var(--colormain);
+    height:40vh;
+    position: relative;
+    bottom: 243vh;
+}
+main{
+    margin-bottom: 50%;
+    max-height: 480vh;
+}
